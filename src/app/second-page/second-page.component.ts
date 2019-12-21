@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //import the activated route and inject it to the bclass below
-import { ActivatedRoute } from '@angular/router';
+// import { ActivatedRoute } from '@angular/router';
 //store service import
 import { PdataserviceService } from '../pdataservice.service';
 
@@ -10,20 +10,17 @@ import { PdataserviceService } from '../pdataservice.service';
   styleUrls: ['./second-page.component.css']
 })
 export class SecondPageComponent implements OnInit {
-
+  thisCart;
   constructor(
-    private route: ActivatedRoute,
-    private data: PdataserviceService,
+    // private route: ActivatedRoute,
+   private data: PdataserviceService,
   ) { }
 
-  addToStoredData(information){
-    window.alert('Information stored')
-    this.data.addToSToredData(information)
 
-  }
 
   ngOnInit() {
-    // this.route.paramMap.subscribe( )
+    this.thisCart= this.data.getStoredData()
+    
   }
 
 }

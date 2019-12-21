@@ -1,14 +1,19 @@
 <p>first-page works!</p>
 
 <div *ngFor="let dummy of dummyData">
-    <p [title]="'Info about '+ dummy.name">{{dummy.name}}</p>
-    <p >{{dummy.age}}</p>
+    <p [title]="'Info about '+ dummy.name">Name: {{dummy.name}}</p>
+    <p >Age: {{dummy.age}}</p>
     <p *ngIf="dummy.description">
         Description: {{dummy.description}}
     </p>
 
     <button class="mat-raised-button" (click)="like()">
         Like
+    </button>
+<!-- self lesson, always check your spellings 😂😂-->
+    <button (click)="addToStoredData(dummy)">
+        Save
+
     </button>
 
 

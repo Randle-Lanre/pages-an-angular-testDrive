@@ -12,7 +12,7 @@ export class PdataserviceService {
   }
 
   getStoredData(){
-    return this.getStoredData;
+    return this.storedData;
 
   }
 
