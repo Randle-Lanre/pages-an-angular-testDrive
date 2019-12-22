@@ -9,7 +9,7 @@ import { PdataserviceService } from '../pdataservice.service';
 })
 export class FirstPageComponent implements OnInit {
   dummyData= dummyData;
-  details;
+  //details;
 
    constructor(
      private dataServices: PdataserviceService,
