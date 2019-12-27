@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { FirstPageComponent } from './first-page/first-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SecondPageComponent } from './second-page/second-page.component';
+import { AlertsComponent } from './alerts/alerts.component';
 
 //added the first page component here
 @NgModule({
   declarations: [
     AppComponent,
     FirstPageComponent,
-    SecondPageComponent
+    SecondPageComponent,
+    AlertsComponent
   ],
   imports: [
     BrowserModule,
