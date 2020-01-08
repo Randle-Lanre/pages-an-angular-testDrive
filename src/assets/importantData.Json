@@ -1,0 +1,10 @@
+[
+    {
+        "location": "abuja",
+        "price":10.99
+    },
+    {
+        "location":"Lagos",
+        "price": 6.99
+    }
+]
